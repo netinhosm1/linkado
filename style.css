@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.5);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.5);
+  --highlight-color: rgba(0, 0, 0, 0.2);
+  --switch-bg-url: url(./assets/assets/sun.svg);
+}
+
+body {
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center; /* top esta no eixo y e o center no eixo x*/
+  background-size: cover; /*cover coloca em todo o espaço, o contain faz o background estar contido em algo, ou seja, tem que ter um altura e largura do objeto que vai adicionar esse back */
+
+  /*Agrupando tudo em um unico lugar 
+background: url(./assets/assets/bg-mobile.jpg) no-repeat top center/cover; */
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 360px;
+  height: 712px;
+  /*border: 1px solid white;*/
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+  margin: 56px auto 0px; /* cima, lados, baixo */
+}
+
+#profile img {
+  /*display: block;*/
+  width: 112px;
+  /*margin: auto;*/
+}
+
+#profile p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+  
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 0px;
+  border-radius: 50%;
+  background-image: var(--switch-bg-url);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /*parte complicada, tentar entender direito depois*/
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span { /*o span eh inline, por isso usamos o display: block */
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+
+}
+
+/* Lista de Links */
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.5s;
+}
+
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  /*gap: 32px;*/
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+}
