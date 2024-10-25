@@ -29,6 +29,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center; /* top esta no eixo y e o center no eixo x*/
   background-size: cover; /*cover coloca em todo o espaço, o contain faz o background estar contido em algo, ou seja, tem que ter um altura e largura do objeto que vai adicionar esse back */
+  height: 100vh;
 
   /*Agrupando tudo em um unico lugar 
 background: url(./assets/assets/bg-mobile.jpg) no-repeat top center/cover; */
@@ -170,4 +171,17 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/* media Queries - Para usar o Media é necessario ter a linha 👇 no HTML
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+*/
+@media (min-width: 700px){
+  :root{
+    --bg-url: url(./assets/assets/bg-desktop.jpg)
+    
+  }
+  .light{
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg)
+  }
 }
