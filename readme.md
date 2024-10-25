@@ -1,4 +1,3 @@
-
 <h1 align="center"> Linkado </h1>
 
 <p align="center">
@@ -6,6 +5,7 @@ projeto final das aulas promovidas pela Rocketseat para ensino de tecnologias WE
 <br/>
 
 <p align="center">
+  <a href="#-aprendizado">Aprendizado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -22,12 +22,10 @@ projeto final das aulas promovidas pela Rocketseat para ensino de tecnologias WE
   <img alt="projeto Linkado" src=".github/preview.jpg" width="100%">
 </p>
 
-
-
-
 ## 👨‍💻 Aprendizado
 
-Com esse projeto foi possível revisar o conhecimento nas tecnologias HTML, CSS e Javascript. 
+Com esse projeto foi possível revisar o conhecimento nas tecnologias HTML, CSS e Javascript.
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -42,7 +40,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Linkado é um agregador de links para usar como cartão de visitas online.
 
 - [Acesse o projeto finalizado, online](https://github.com/netinhosm1/linkado)
-
 
 ## 🔖 Layout
 
