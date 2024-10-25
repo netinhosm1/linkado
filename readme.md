@@ -22,6 +22,12 @@ projeto final das aulas promovidas pela Rocketseat para ensino de tecnologias WE
   <img alt="projeto Linkado" src=".github/preview.jpg" width="100%">
 </p>
 
+
+
+
+## 👨‍💻 Aprendizado
+
+Com esse projeto foi possível revisar o conhecimento nas tecnologias HTML, CSS e Javascript. 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
