@@ -16,11 +16,11 @@ function toggleMode() {
   //se estiver em light
   if (html.classList.contains("light")) {
     //adiciona a imagem light a tag img
-    img.setAttribute("src", "./assets/assets/avatar-light.png")
+    img.setAttribute("src", "./assets/assets/avatar-light-n.png")
     img.setAttribute("alt", "Foto de Perfil light")
   } else {
     //se estiver em dark, adiciona a imagem dark a tag img
-    img.setAttribute("src", "./assets/assets/avatar.png")
+    img.setAttribute("src", "./assets/assets/avatar-dark.png")
     img.setAttribute("alt", "Foto de Perfil Dark")
   }
 }
